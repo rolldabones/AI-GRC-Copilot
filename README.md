@@ -1,16 +1,16 @@
 # AI-GRC-Copilot
 
-This is the spellbook for the "AI GRC Copilot" custom GPT
+This is the spellbook for the **AI GRC Copilot** custom GPT.
 
-This is a 𝗦𝗵𝗮𝗿𝗲𝗱 𝗦𝗽𝗲𝗹𝗹𝗯𝗼𝗼𝗸 for AI GRC.  
+This is a **𝗦𝗵𝗮𝗿𝗲𝗱 𝗦𝗽𝗲𝗹𝗹𝗯𝗼𝗼𝗸** for AI governance, risk management and compliance (AI GRC).
 
 These Spellbooks are workflows, prompts and working habits that help you use AI to get real work done and keep it operable and maintainable.
 
-The AI GRC Copilot helps generate a stack of 30 basic artifacts for use in AI GRC. 
+The AI GRC Copilot helps generate a stack of 30 basic artifacts for use in AI GRC.
 
 Not everyone needs every item. If you are running high-risk AI in a grown-up organization, this is the map.
 
-Governance is, among other things, a documentation engine that produces decisions and proof. 
+Governance is, among other things, a documentation engine that produces decisions and proof.
 
 If you cannot point to the artifact, the owner, the control and the log, you do not have governance. You have hope.
 
@@ -18,62 +18,71 @@ The prompt will not do the job for you. You supply facts, constraints, decisions
 
 Delegation is not abdication.
 
-𝗙𝗶𝗻𝗮𝗹 𝗟𝗶𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗿𝗲𝘀𝘁𝘀 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗛𝘂𝗺𝗮𝗻.
+**𝗙𝗶𝗻𝗮𝗹 𝗟𝗶𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗿𝗲𝘀𝘁𝘀 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗛𝘂𝗺𝗮𝗻.**
 
 I wrote a prompt to create a Custom GPT that helps draft these artifacts. It is at the end of this file.
 
 My own tweaked GPT is here: https://lnkd.in/gj5nenxx
 
-The artifacts are:
+## The artifacts
 
-𝟭) 𝗧𝗼𝗻𝗲 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝘁𝗼𝗽
-AI Policy
-AI Governance Charter
-AI Code of Conduct / Ethical Guidelines
-Roles & Responsibilities Matrix (RACI)
+### 𝟭) 𝗧𝗼𝗻𝗲 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝘁𝗼𝗽
 
-𝟮) 𝗥𝗶𝘀𝗸 𝗮𝗻𝗱 𝗰𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝗰𝗲 𝗱𝗶𝘀𝗰𝗶𝗽𝗹𝗶𝗻𝗲
-AI Risk Management Framework
-AI Risk Register
-AI Compliance Register
-AI Audit & Assurance Plan
+- AI Policy  
+- AI Governance Charter  
+- AI Code of Conduct / Ethical Guidelines  
+- Roles & Responsibilities Matrix (RACI)
 
-𝟯) 𝗟𝗶𝗳𝗲𝗰𝘆𝗰𝗹𝗲 𝗰𝗼𝗻𝘁𝗿𝗼𝗹𝘀
-AI System Inventory & Classification Register
-AI Lifecycle Management SOPs
-Model Risk Management Policy
-Bias & Fairness Testing Protocols
-Explainability & Transparency Standards
-Human-in-the-Loop Guidelines
+### 𝟮) 𝗥𝗶𝘀𝗸 𝗮𝗻𝗱 𝗰𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝗰𝗲 𝗱𝗶𝘀𝗰𝗶𝗽𝗹𝗶𝗻𝗲
 
-𝟰) 𝗗𝗮𝘁𝗮 𝗴𝗼𝘃𝗲𝗿𝗻𝗮𝗻𝗰𝗲 𝗮𝗻𝗱 𝗽𝗿𝗶𝘃𝗮𝗰𝘆
-Data Management Policy for AI
-Data Privacy Impact Assessment process
-Data Provenance & Lineage Documentation
+- AI Risk Management Framework  
+- AI Risk Register  
+- AI Compliance Register  
+- AI Audit & Assurance Plan
 
-𝟱) 𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗼𝘃𝗲𝗿𝘀𝗶𝗴𝗵𝘁
-AI Incident Response & Escalation Plan
-AI Vendor & Third-Party Risk Management Policy
-Change Management Procedure for AI Models
-Performance & Reliability Monitoring Plan
+### 𝟯) 𝗟𝗶𝗳𝗲𝗰𝘆𝗰𝗹𝗲 𝗰𝗼𝗻𝘁𝗿𝗼𝗹𝘀
 
-𝟲) 𝗘𝘃𝗶𝗱𝗲𝗻𝗰𝗲 𝗮𝗻𝗱 𝗮𝘂𝗱𝗶𝘁 𝗿𝗲𝗮𝗱𝗶𝗻𝗲𝘀𝘀
-Model Documentation Templates (Model Cards)
-Decisions Log
-Stakeholder Feedback Record
-Workstream Tracker
+- AI System Inventory & Classification Register  
+- AI Lifecycle Management SOPs  
+- Model Risk Management Policy  
+- Bias & Fairness Testing Protocols  
+- Explainability & Transparency Standards  
+- Human-in-the-Loop Guidelines
 
-𝟳) 𝗧𝗿𝗮𝗶𝗻𝗶𝗻𝗴 𝗮𝗻𝗱 𝗮𝘄𝗮𝗿𝗲𝗻𝗲𝘀𝘀
-AI Training & Competency Framework
-AI Awareness & Communication Plan
+### 𝟰) 𝗗𝗮𝘁𝗮 𝗴𝗼𝘃𝗲𝗿𝗻𝗮𝗻𝗰𝗲 𝗮𝗻𝗱 𝗽𝗿𝗶𝘃𝗮𝗰𝘆
 
-𝟴) 𝗘𝘅𝘁𝗲𝗿𝗻𝗮𝗹 𝗽𝗼𝘀𝘁𝘂𝗿𝗲
-ISO/IEC 42001 Alignment Roadmap
-Regulatory Engagement Playbook
-Continuous Improvement Plan
+- Data Management Policy for AI  
+- Data Privacy Impact Assessment process  
+- Data Provenance & Lineage Documentation
 
-The basic prompt to create this custom GPT:
+### 𝟱) 𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗼𝘃𝗲𝗿𝘀𝗶𝗴𝗵𝘁
 
+- AI Incident Response & Escalation Plan  
+- AI Vendor & Third-Party Risk Management Policy  
+- Change Management Procedure for AI Models  
+- Performance & Reliability Monitoring Plan
+
+### 𝟲) 𝗘𝘃𝗶𝗱𝗲𝗻𝗰𝗲 𝗮𝗻𝗱 𝗮𝘂𝗱𝗶𝘁 𝗿𝗲𝗮𝗱𝗶𝗻𝗲𝘀𝘀
+
+- Model Documentation Templates (Model Cards)  
+- Decisions Log  
+- Stakeholder Feedback Record  
+- Workstream Tracker
+
+### 𝟳) 𝗧𝗿𝗮𝗶𝗻𝗶𝗻𝗴 𝗮𝗻𝗱 𝗮𝘄𝗮𝗿𝗲𝗻𝗲𝘀𝘀
+
+- AI Training & Competency Framework  
+- AI Awareness & Communication Plan
+
+### 𝟴) 𝗘𝘅𝘁𝗲𝗿𝗻𝗮𝗹 𝗽𝗼𝘀𝘁𝘂𝗿𝗲
+
+- ISO/IEC 42001 Alignment Roadmap  
+- Regulatory Engagement Playbook  
+- Continuous Improvement Plan
+
+## The basic prompt to create this custom GPT
+
+```text
 You are “AI GRC Spellbook Copilot.”
 
 Mission
