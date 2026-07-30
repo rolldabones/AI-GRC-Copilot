@@ -2,6 +2,12 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.1.1 - 2026-07-30
+
+### Changed
+- Trademark rendering corrected to the canonical closed-up form GRCnext™. The retired spaced form "GRC next" is withdrawn from repository prose. One occurrence, in the grc line of the Part of the ecosystem section. The mirrored production instruction block is unchanged.
+- Version line updated in lockstep.
+
 ## v1.1.0 - 2026-07-15
 
 - README rebuilt as a production-verbatim mirror of the deployed AI GRC Spellbook Copilot custom GPT (Name, Description, Instruction, Conversation Starters, Capabilities), superseding the v1.0.0 "basic prompt to create this custom GPT," which had drifted from production
