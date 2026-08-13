@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.1.2 · 13 August 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
+**Version 1.1.3 · 13 August 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
 
 This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:
 
