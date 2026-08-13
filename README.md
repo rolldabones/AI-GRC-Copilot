@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.1.1 · 30 July 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
+**Version 1.1.2 · 13 August 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
 
 This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:
 
@@ -182,7 +182,7 @@ These are candidate edits to the deployed GPT. The repository mirrors production
 ## Regulatory-currency note (15 July 2026)
 
 - ISO/IEC 42001:2023 remains the current edition of the AI management system standard. EN ISO/IEC 42001:2026 is the CEN European adoption of the same 2023 text, not a revision. The companion impact assessment methodology is ISO/IEC 42005:2025.
-- The EU Digital Omnibus on AI was adopted by the European Parliament on 16 June 2026 and the Council on 29 June 2026 and awaits publication in the Official Journal as of this note. On entry into force it defers Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk obligations to 2 August 2028. Until publication, 2 August 2026 remains the legally operative date. Deployer transparency obligations under Article 50 still apply from 2 August 2026.
+- **Amendment note, 13 August 2026 (KST).** This entry previously recorded the Digital Omnibus on AI as awaiting publication and 2 August 2026 as the legally operative high-risk date. That is superseded. The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes. Annex III high-risk obligations are deferred to 2 December 2027 and Annex I embedded high-risk obligations to 2 August 2028. Deployer transparency obligations under Article 50 still apply from 2 August 2026. Article 5 sits in Chapter II and, under Article 113, point (a), **applies from 2 February 2025**. That date is settled and is not affected by the Omnibus. ⧉ The amending regulation's own Official Journal text has not been read. Its renumbering of Article 113 is unconfirmed, so no pinpoint to a numbered subsection of Article 113 is given here. Cite the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex with an as-at date, and verify before relying on any date in a client-facing or regulatory submission.
 - References to standards and frameworks in this repository name alignment targets for drafting purposes. They are not conformity claims. Verify current status before relying on any of them.
 
 ## Part of the ecosystem
