@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.1.4 · 13 August 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
+**Version 1.1.5 · 6 September 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT**
 
 This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:
 
@@ -194,6 +194,12 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 - [slow-ai-kitchen](https://github.com/rolldabones/slow-ai-kitchen) - the 12-step governed AI methodology the Spellbook operationalizes
 - [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool) - the pre-deployment gate that generates inputs for the risk and inventory artifacts
 - [master-prompt-for-in-house-legal-and-compliance](https://github.com/rolldabones/master-prompt-for-in-house-legal-and-compliance) - the general-purpose in-house workbench alongside this specialized one
+
+## How to Cite
+
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.1.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+
+A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 ## License
 

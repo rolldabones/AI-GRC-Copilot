@@ -2,6 +2,14 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.1.5 - 2026-09-06
+
+Citation infrastructure, doctrine citation line and lockstep maintenance. Session C of the September 2026 improvement pack, one patch release per repository across all 21 public repositories.
+
+- **`CITATION.cff` added** in the house form settled at D-C1: no `type` field, `version` and `date-released` in lockstep with the README, `license` as the SPDX identifier for this repository's licence, `abstract` taken from this repository's ECOSYSTEM.md role line rather than newly written.
+- **How to Cite block** aligned to this release and pointing at `CITATION.cff`.
+- All other files in this repository are unchanged byte for byte.
+
 ## v1.1.4 - 2026-08-13
 
 OJ text of the amending regulation obtained; Article 5 date corrected.
