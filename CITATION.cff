@@ -4,8 +4,8 @@ title: "AI GRC Copilot"
 authors:
   - family-names: "Paik"
     given-names: "Son-U Michael"
-version: 1.1.5
-date-released: "2026-09-06"
+version: 1.1.6
+date-released: "2026-09-28"
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/rolldabones/AI-GRC-Copilot"
 abstract: "The artifact factory: production mirror of the AI GRC Spellbook Copilot custom GPT, which drafts the 30 canonical AI GRC artifacts with owners, evidence and systems of record."
