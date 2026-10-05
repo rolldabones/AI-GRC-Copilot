@@ -1,12 +1,12 @@
 # AI GRC Copilot
 
-**Version 1.1.6 · 28 September 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT, retiring 11 December 2026**
+**Version 1.1.7 · 5 October 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT, retiring 11 December 2026**
 
 This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:
 
 **https://chatgpt.com/g/g-6957671b65188191963a0b5cf59cc4c4-ai-grc-spellbook-copilot**
 
-> **Retirement notice, 28 September 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. The AI GRC Spellbook Copilot will be retired on that date and will not be migrated. The link above stops working then.
+> **Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The AI GRC Spellbook Copilot will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the AI GRC Spellbook Copilot was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The link above was verified resolving on 5 October 2026 and stops working on 11 December 2026.
 >
 > Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
 
@@ -201,7 +201,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Copilot*, v1.1.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.1.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
