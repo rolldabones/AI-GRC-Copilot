@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.1.7 · 5 October 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT, retiring 11 December 2026**
+**Version 1.1.8 · 17 October 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT, retiring 11 December 2026**
 
 This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:
 
@@ -201,7 +201,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Copilot*, v1.1.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.1.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

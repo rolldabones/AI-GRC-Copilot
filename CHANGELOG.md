@@ -2,6 +2,13 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.1.8 - 2026-10-17
+
+Mechanical patch, session T3 of the whole-account review of 15 October 2026 (doc section 8). The production mirror and the proposed-changes section are unchanged.
+
+- Closing line added at the end of this file, the one file in the repository without it.
+- Masthead, How to Cite and `CITATION.cff` to 1.1.8 in lockstep. The retirement notice, the deployed-configuration wording and the canonical EU-note link are session T4's and are untouched.
+
 ## v1.1.7 - 2026-10-05
 
 Correction of substance to the retirement notice of the previous release. On 1 October 2026 the AI GRC Spellbook Copilot was converted to a private ChatGPT plugin, so the notice's statement that it would not be migrated was false.
@@ -76,3 +83,7 @@ Omnibus currency remediation. The Digital Omnibus on AI entered into force on 27
 ## v1.0.0 - baseline
 
 - Initial README: spellbook framing, the 30 artifacts in eight groups, seed prompt for creating the custom GPT, lnkd.in link to the deployed GPT. No LICENSE, CHANGELOG or tags.
+
+---
+
+**Final Liability rests with the Human.**
