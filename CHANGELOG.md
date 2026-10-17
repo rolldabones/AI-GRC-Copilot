@@ -2,6 +2,68 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.0 - 2026-10-18
+
+Minor release: instrument form after the GPT retirement. Session T4 of the whole-account review of 15 October 2026 (doc section 4, items 2 and 3; reviewer report 11, items A3, A4, A7, A8, A10, A13, B1, B2, B5, C4 and C6), under determination D5 and ruling 9. The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; nothing is verified against the plug-in. The instruction block is an instrument of this repository from 1 October 2026 and is editable under the version rule. Dated amendment, 18 October 2026 (KST): no earlier entry is re-dated or changed.
+
+- **`instructions.md` (new):** the instruction block, moved out of the README into one fenced block, as last verified against the GPT on 15 July 2026, before the conversion, with the two changes itemized below.
+- **`tests.md` (new):** cases derived from the block's own rules, the known defects (report 11 items A1, A2, B6 and B7) and the Last run record.
+- **`example.md` (new):** one illustrative run (#6 AI Risk Register for a fictional mid-size logistics company), labeled as not a logged test run.
+- **`README.md` restructured to the mirror template:** masthead; the standard retirement line in place of the notice; What it does; Run it in three steps (replacing How to use it); the 30 artifacts numbered 1 to 30 so "#6", "#18", "#19" and "#21" resolve (B5); Proposed changes to the instructions (A4); the regulatory-currency note with its heading amended (A8); a Change control section (ruling 9); ecosystem; How to Cite; License. The mid-page bold closing line under the introduction is removed; the closing line stays the last line of the file.
+- **Proposed changes re-targeted (A4).** They were held "until they are made in production", a condition impossible since 1 October 2026. They are now proposals for the instrument, each accepted only after one logged run under ruling 9. Items 1 and 2 are kept and not applied. Item 4 is made by its second route, because the "Start" trigger was a GPT-only dependency. Item 3 is struck as moot.
+- **Primitives line (A7).** The grc neighbor line no longer says the 30 artifacts "implement" the GRCnext™ primitives and now points to GRCnext-Copilot, where the primitives are defined (ECOSYSTEM.md v1.5.1 entry). The neighbor set is unchanged.
+- **Regulatory-currency note (A8).** Heading only: "(15 July 2026)" becomes "(15 July 2026, amended 13 August 2026)". No legal or regulatory statement in the note is changed in this release; report 11 item A5 (Article 50 provider transition) is outside this session.
+- **`CITATION.cff`:** `version` 1.2.0 and `date-released` 2026-10-18 in lockstep; the abstract is replaced (C6, D5). Old: ~~"The artifact factory: production mirror of the AI GRC Spellbook Copilot custom GPT, which drafts the 30 canonical AI GRC artifacts with owners, evidence and systems of record."~~ **STRUCK 18 October 2026 (KST).** New: "The artifact factory: an instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026), that drafts the 30 canonical AI GRC artifacts with owners, evidence and systems of record."
+- **`LICENSE.md`:** ~~"The deployed custom GPT runs on the OpenAI ChatGPT platform under OpenAI's terms."~~ **STRUCK 18 October 2026 (KST)**, on the author's instruction of the same day to settle the open items: the sentence now says the GPT ran on that platform until its retirement on 1 October 2026 and that the instructions are not tied to any platform. The license itself is unchanged.
+- **Regulatory-currency note:** one pointer bullet to the account's canonical [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note), which governs on conflict; the pointer T1 deferred to this session (review log, 15 October 2026). No legal statement in the note changed.
+- **Not changed:** the shipped entries below.
+
+### Configuration as last deployed, Locked 1 October 2026
+
+Archived verbatim from the README of v1.1.8. Instructions last verified against the GPT on 15 July 2026, before the conversion. GPT model: Unknown (not recorded). The instruction block as last verified is the fenced block in `README.md` at tag v1.1.8.
+
+**Name:** AI GRC Spellbook Copilot
+
+**Description:** Audit-ready AI GRC artifacts, workflows, evidence runbooks and prompt packs.
+
+**Conversation starters:**
+
+- Build Spellbook Pack for #6 AI Risk Register in our org context
+- Create SOP runbook for #18 AI Incident Response with evidence checklist
+- Draft #19 AI Vendor Risk Policy with minimum clauses and audit rights
+- Stress-test #21 Monitoring Plan for drift, alerts, escalation, KPIs
+
+**Capabilities:** Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis
+
+**Knowledge files:** None
+
+### Struck from README.md, 18 October 2026 (KST)
+
+- Masthead: ~~**Version 1.1.8 · 17 October 2026 · Production mirror of the AI GRC Spellbook Copilot custom GPT, retiring 11 December 2026**~~ **STRUCK.**
+- ~~This is the spellbook for the **AI GRC Spellbook Copilot** custom GPT, deployed at:~~ **STRUCK.**
+- ~~https://chatgpt.com/g/g-6957671b65188191963a0b5cf59cc4c4-ai-grc-spellbook-copilot~~ **STRUCK** (live link removed).
+- How to use it, step 1: ~~1. Open the deployed GPT at the link above (requires a ChatGPT account).~~ **STRUCK.**
+- Production configuration: ~~Everything below mirrors the deployed custom GPT verbatim as of 15 July 2026. When production changes, this section changes and the repository version bumps.~~ **STRUCK.** The instructions are now "as last verified on 15 July 2026, before the conversion".
+- ~~## Proposed changes to production (not yet deployed)~~ **STRUCK**, retitled "Proposed changes to the instructions".
+- ~~These are candidate edits to the deployed GPT. The repository mirrors production, so none of these appear in the configuration above until they are made in production and the repo re-versions.~~ **STRUCK.**
+- Proposal item 3: ~~**Disable Image Generation.** It serves no function in a GRC drafting tool and widens the surface for off-mission output. Web Search, Canvas and Code Interpreter carry the workload.~~ **STRUCK**: moot after the retirement, since capability toggles do not exist outside the GPT.
+- Proposal item 4, original text: ~~**Reconcile the "Start" trigger.** The Instruction keys the intake sequence to the user saying "Start", but no conversation starter says "Start". Either add a fifth starter ("Start: set up my org context for all 30 artifacts") or rephrase the trigger to fire on any new engagement.~~ **STRUCK**, replaced by its status.
+- Ecosystem: ~~[grc](https://github.com/rolldabones/grc) - the GRCnext™ framework whose primitives the 30 artifacts implement~~ **STRUCK.**
+- The retirement notice, both paragraphs, **STRUCK 18 October 2026 (KST)** and replaced by the standard retirement line. Quoted verbatim without new strike markup, because the first paragraph already carries its own strike of 5 October 2026:
+
+> **Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The AI GRC Spellbook Copilot will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the AI GRC Spellbook Copilot was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The link above was verified resolving on 5 October 2026 and stops working on 11 December 2026.
+>
+> Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
+
+### Instruction block changes, 15 July 2026 text → v1.2.0
+
+- **Old:** `help the user build and maintain a shared, practical spellbook of AI governance, risk and compliance workflows and artifacts.`
+  **New:** `help the user build and maintain a shared, practical spellbook of AI governance, risk management and compliance workflows and artifacts.`
+- **Old:** `When the user says “Start”, ask for: first artifact or workflow module, sector and jurisdictions, top 3 use cases, systems of record and accountable exec.`
+  **New:** `At the start of any new engagement, ask for: first artifact or workflow module, sector and jurisdictions, top 5 use cases, systems of record and accountable exec.`
+
+The first is house style (report 11 C4: "governance, risk management and compliance" spelled out). The second removes a GPT-only dependency (a trigger keyed to conversation starters that did not exist) and fixes the internal contradiction of report 11 A3: the closing line asked for the top 3 use cases while INTERROGATE and the Master List ask for the top 5. Both await the logged run under ruling 9. The proposals in the README are not applied.
+
 ## v1.1.8 - 2026-10-17
 
 Mechanical patch, session T3 of the whole-account review of 15 October 2026 (doc section 8). The production mirror and the proposed-changes section are unchanged.

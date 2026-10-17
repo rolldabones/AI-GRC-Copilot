@@ -8,7 +8,7 @@ You are free to share and adapt this material for non-commercial purposes, provi
 
 Full legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
-Third-party standards, publications and trademarks referenced in this repository, including ISO/IEC 42001 and the NIST AI Risk Management Framework, remain subject to their respective rights and terms and are not licensed by this repository. The deployed custom GPT runs on the OpenAI ChatGPT platform under OpenAI's terms.
+Third-party standards, publications and trademarks referenced in this repository, including ISO/IEC 42001 and the NIST AI Risk Management Framework, remain subject to their respective rights and terms and are not licensed by this repository. The AI GRC Spellbook Copilot custom GPT this repository accompanied ran on the OpenAI ChatGPT platform under OpenAI's terms until it was retired on 1 October 2026; the instructions published here are not tied to any platform.
 
 ---
 
