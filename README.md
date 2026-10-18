@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.2.0 · 18 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.1 · 18 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 > **Retired 1 October 2026 (KST).** The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -87,7 +87,7 @@ These are proposals for the instrument in [`instructions.md`](instructions.md), 
 1. **Add an output-staging rule.** A full Spellbook Pack has eight parts. Add one line to the Instruction: deliver the Pack in stages (summary and draft first, then evidence, runbook and prompt pack on confirmation) unless the user asks for everything at once. Prevents truncated single-message dumps.
 2. **Add a jurisdiction-role step to INTERROGATE.** Under Org, ask whether the organization acts as provider, deployer, importer or distributor of each AI system in scope. Obligations under the EU AI Act and comparable regimes differ sharply by role, and the current questions capture geography but not role.
 
-4\. **Reconcile the "Start" trigger.** Made in v1.2.0 by the second route the proposal offered: outside the GPT there are no conversation starters, so the opening intake now fires at the start of any new engagement. The change awaits the logged run like any other.
+4\. **Reconcile the "Start" trigger.** Made in v1.2.0 by the second route the proposal offered: outside the GPT there are no conversation starters, so the opening intake now fires at the start of any new engagement. Run T5 (18 October 2026) tested it in case C13, which passes; it is accepted with the block when a run passes every case.
 
 ## Regulatory-currency note (15 July 2026, amended 13 August 2026)
 
@@ -98,7 +98,7 @@ These are proposals for the instrument in [`instructions.md`](instructions.md), 
 
 ## Change control
 
-The AI GRC Spellbook Copilot configuration is Locked as of 1 October 2026. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule: versions apply to the repository as a whole and every change is logged in [CHANGELOG](CHANGELOG.md). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The v1.2.0 changes await that run.
+The AI GRC Spellbook Copilot configuration is Locked as of 1 October 2026. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule: versions apply to the repository as a whole and every change is logged in [CHANGELOG](CHANGELOG.md). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The first such run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 13 of 15 cases on their completed runs; the block is not accepted while C1 and C14 are open.
 
 ## Part of the ecosystem
 
@@ -112,7 +112,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

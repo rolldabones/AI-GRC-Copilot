@@ -1,6 +1,6 @@
 # AI GRC Copilot: tests
 
-**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.0 · 18 October 2026 (KST)**
+**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.1 · 18 October 2026 (KST)**
 
 Each case is derived from a rule in the block and quotes it. A run passes when every case it exercises passes; a case not exercised in a run is recorded as not run, never as passed. Run the cases against the block as published, pasted as the system prompt of the model under test.
 
@@ -32,13 +32,42 @@ Recorded from reviewer report 11 (15 October 2026). None is fixed in the block a
 - **K2 (report 11 A2): GPAI questions feed nothing.** Master List item C14 asks about general-purpose AI model provider obligations; the block has no drafting requirement for them and the stack has no artifact that carries them. A Yes at C14 is at most flagged, not drafted.
 - **K3 (report 11 B6): drafting types cover 11 of 30 artifacts.** "Drafting requirements by type" has no type for #3 Code of Conduct, #4 RACI, #5 Framework, #8 Audit Plan, #13 Standards, #14 Guidelines, #17 Lineage, #23 Log, #24 Record, #25 Tracker, #27 Awareness Plan, #28 Roadmap and #30 Continuous Improvement Plan. For these, C10 cannot be tested against a stated list.
 - **K4 (report 11 B7): coverage gaps between the Master List and the artifacts.** #19 Vendor Policy: no vendor inventory or criticality tier is collected, so due diligence and the "Blocked" flag bite on nothing. #18 Incident Response: no containment question (who can pause or disable a system and who authorizes it). #28 ISO/IEC 42001 Alignment Roadmap: no baseline (existing certifications, scope, target date). #14 Human-in-the-Loop Guidelines: nothing on what the reviewer may do (override, stop) or on reviewer competence. #29 Regulatory Engagement Playbook: no intake, document packs, timelines or existing registrations.
-- **K5: proposals not applied.** README proposals 1 (output staging) and 2 (provider, deployer, importer or distributor role at INTERROGATE) are open. Until proposal 1 lands, a full eight-part Pack can run past one response.
+- **K5: proposals not applied.** README proposals 1 (output staging) and 2 (provider, deployer, importer or distributor role at INTERROGATE) are open. Until proposal 1 lands, a full eight-part Pack can run past one response. Run T5 (18 October 2026) confirms it: at max_tokens 16,000 ten of fifteen cases were truncated, and the full Pack of C9 completed only at 64,000.
 
 ## Last run
 
-No logged run of the published instructions on the successor configuration as at 18 October 2026 (KST). Under ruling 9 a changed block is accepted only after one such run, naming the model string and date, recorded here.
+**Run T5, 18 October 2026 (KST).** The first logged run of the published instructions under ruling 9. Evidence: [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md), one transcript with its score per case, the ten truncated first attempts and both summaries.
 
-The two block changes of v1.2.0 (CHANGELOG) await that run. [`example.md`](example.md) is an illustrative run, not a logged test run.
+- **Instruction text:** the fenced block of [`instructions.md`](instructions.md) at v1.2.0 and nothing outside it, 5,793 characters, SHA-256 `a8c49a1c7cf635d528a398da66ef883d8b4d61d6dac2e735e9d26dd13dc54e04` (repository HEAD `219a006`, tag v1.2.0).
+- **Model:** `claude-opus-5-5`. **Scorer:** `claude-sonnet-5-5`, not the tested model. LLM scoring is developer testing, not independent assurance.
+- **Harness:** API system prompt, no tools, a fresh session per case (C2, C8 and C12 are two turns in one session); fictional company and vendors. max_tokens 16,000 for the first run (10:15 KST) and 64,000, streamed, for the re-run of the ten cases the first run truncated (11:34 KST), same prompts and manifest.
+- **Result of record:** each case's completed run. The ten first attempts truncated at 16,000 (C3, C5 to C12, C14) are not exercised and carry no result; their transcripts are kept in the evidence with a `-run1-truncated` suffix.
+
+| Case | Run of record | Scorer verdict | Session review | Reason |
+| --- | --- | --- | --- | --- |
+| C1 | 16,000 | FAIL | Concur, model behavior | The label appears once, in a row that omits size, regulated status and critical products; the dependency table marks eleven statuses bare "Unknown" |
+| C2 | 16,000 | PASS | Not reviewed | |
+| C3 | 64,000 | PASS | Not reviewed | |
+| C4 | 16,000 | PASS | Not reviewed | |
+| C5 | 64,000 | PASS | Not reviewed | |
+| C6 | 64,000 | PASS | Not reviewed | |
+| C7 | 64,000 | PASS | Not reviewed | |
+| C8 | 64,000 | PASS | Spot-checked, concur | Strict, balanced and fast offered per decision before drafting; after the pick, decision log entries DEC-RR-001 to 003 |
+| C9 | 64,000 | PASS | Not reviewed | |
+| C10 | 64,000 | PASS | Not reviewed | |
+| C11 | 64,000 | PASS | Spot-checked, concur | DPIA triggers, human oversight, adverse impact analysis and appeals present; Talvero flagged "Blocked" with fixes and minimum clauses |
+| C12 | 64,000 | PASS | Not reviewed | |
+| C13 | 16,000 | PASS | Not reviewed | |
+| C14 | 64,000 | FAIL | Concur, model behavior | Two serial commas in a 46,000-character output (sections 2.10 and 2.14) against "avoid the Oxford comma"; no em dash |
+| C15 | 16,000 | PASS | Not reviewed | |
+
+**Counts.** Scorer, result of record: 13 PASS, 2 FAIL (C1, C14), 0 UNSCORABLE, 0 truncated; first run alone: 4 PASS, 1 FAIL, 10 truncated (9 UNSCORABLE, C6 FAIL truncated), not exercised. Session review of the two FAILs: 2 concur, model behavior; 0 instrument defect; 0 dissent; 0 case defect. Two re-run PASS verdicts were spot-checked against their transcripts (C8, C11) and the session concurs.
+
+**Acceptance.** Under this file's rule ("A run passes when every case it exercises passes") the run does not pass: not accepted, open cases C1 and C14. The case on the "Start" trigger changed at v1.2.0 passes (C13); the block as a whole, with its two v1.2.0 changes, is not accepted under ruling 9 until a run passes every case. Reviewer: pending (Michael Paik). The instruction text is not changed in this release.
+
+**Observed, not a case.** A full eight-part Pack (C9) completed only at 64,000 output tokens; at 16,000 ten of fifteen cases were truncated. This is the effect K5 predicts while README proposal 1 (output staging) is not applied.
+
+[`example.md`](example.md) is an illustrative run, not a logged test run.
 
 History: no run record from the GPT era is published in this repository. Whether the GPT was tested against cases before 1 October 2026 is Unknown.
 
