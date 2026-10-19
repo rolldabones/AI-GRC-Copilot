@@ -1,6 +1,6 @@
 # AI GRC Copilot: tests
 
-**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.1 · 18 October 2026 (KST)**
+**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.2 · 19 October 2026 (KST)**
 
 Each case is derived from a rule in the block and quotes it. A run passes when every case it exercises passes; a case not exercised in a run is recorded as not run, never as passed. Run the cases against the block as published, pasted as the system prompt of the model under test.
 
@@ -63,7 +63,7 @@ Recorded from reviewer report 11 (15 October 2026). None is fixed in the block a
 
 **Counts.** Scorer, result of record: 13 PASS, 2 FAIL (C1, C14), 0 UNSCORABLE, 0 truncated; first run alone: 4 PASS, 1 FAIL, 10 truncated (9 UNSCORABLE, C6 FAIL truncated), not exercised. Session review of the two FAILs: 2 concur, model behavior; 0 instrument defect; 0 dissent; 0 case defect. Two re-run PASS verdicts were spot-checked against their transcripts (C8, C11) and the session concurs.
 
-**Acceptance.** Under this file's rule ("A run passes when every case it exercises passes") the run does not pass: not accepted, open cases C1 and C14. The case on the "Start" trigger changed at v1.2.0 passes (C13); the block as a whole, with its two v1.2.0 changes, is not accepted under ruling 9 until a run passes every case. Reviewer: pending (Michael Paik). The instruction text is not changed in this release.
+**Acceptance.** Under this file's rule ("A run passes when every case it exercises passes") the run does not pass: not accepted, open cases C1 and C14. The case on the "Start" trigger changed at v1.2.0 passes (C13); the block as a whole, with its two v1.2.0 changes, is not accepted under ruling 9 until a run passes every case. Reviewer: Michael Paik, 19 October 2026 (KST), concurs. The instruction text is not changed in this release.
 
 **Observed, not a case.** A full eight-part Pack (C9) completed only at 64,000 output tokens; at 16,000 ten of fifteen cases were truncated. This is the effect K5 predicts while README proposal 1 (output staging) is not applied.
 
