@@ -1,6 +1,6 @@
 # AI GRC Copilot
 
-**Version 1.2.3 · 20 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion; the block changed on 18 October 2026 and no longer matches the Locked GPT configuration · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.4 · 20 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion; the block changed on 18 October 2026 and no longer matches the Locked GPT configuration · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. "Retired" here is the author's own conversion of the GPT on that date, not OpenAI's retirement: under OpenAI's Custom GPT retirement and migration FAQ (quoted in the [CHANGELOG](CHANGELOG.md) retirement notice of 28 September 2026), custom GPTs become inaccessible on 11 December 2026, or 11 February 2027 for Enterprise workspaces with an approved deferral. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -17,7 +17,7 @@ The prompt will not do the job for you. You supply facts, constraints, decisions
 ## Run it in three steps
 
 1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant.
-2. Give it the inputs it asks for: answer the [Master List of Minimum Questions](https://github.com/rolldabones/AI-GRC-Master-List-of-Questions) for your organization or let it interrogate you artifact by artifact, then pick an artifact from the stack of 30 and say what you want built. [`example.md`](example.md) shows one run.
+2. Give it the inputs it asks for: answer the [Master List of Minimum Questions](https://github.com/rolldabones/AI-GRC-Master-List-of-Questions) for your organization (it serves subject to known defect K1 in [`tests.md`](tests.md#known-defects): the block also asks for facts the Master List does not collect) or let it interrogate you artifact by artifact, then pick an artifact from the stack of 30 and say what you want built. [`example.md`](example.md) shows one run.
 3. Review the output yourself and check it against [`tests.md`](tests.md). Drafts are v1 only and never "approved." You review, augment, approve and activate; sign-off is yours.
 
 This repository and [AI-GRC-Master-List-of-Questions](https://github.com/rolldabones/AI-GRC-Master-List-of-Questions) are a pair: this repo holds the drafting engine, that repo holds the minimum input set that feeds it. They version together in intent though not in lockstep numbering.
@@ -105,7 +105,7 @@ These are proposals for the instrument in [`instructions.md`](instructions.md), 
   | Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5): AI systems classified as high-risk pursuant to Article 6(2) and Annex III | 2 December 2027 | Article 113, third paragraph, point (c)(i), as amended | Art. 1, point (40) |
   | The same, for AI systems classified as high-risk pursuant to Article 6(1) and Annex I | 2 August 2028 | Article 113, third paragraph, point (c)(ii), as amended | Art. 1, point (40) |
 
-  So the general Article 5 date is 2 February 2025 and the prohibitions added by the Omnibus are deferred to 2 December 2026. Do not state the Article 5 date without that carve-out. **Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** **Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. The Article 113 rows were read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST).
+  So the general Article 5 date is 2 February 2025 and the prohibitions added by the Omnibus are deferred to 2 December 2026. Do not state the Article 5 date without that carve-out. **Article 113 has unnumbered paragraphs with lettered points; the preferred pinpoint form, the one the amending act uses, is "Article 113, third paragraph, point (c)". "Article 113(3)" also appears in Regulation (EU) 2024/1689 itself (Article 111(1)) and is not an error.** **Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. The Article 113 rows were read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST).
 - The account's canonical [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST), governs where this entry and it differ, including the Article 50(2) provider carve-out that a provider reading needs.
 - References to standards and frameworks in this repository name alignment targets for drafting purposes. They are not conformity claims. Verify current status before relying on any of them.
 
@@ -121,11 +121,11 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 - [grc](https://github.com/rolldabones/grc) - the foundation working method on the OCEG (Open Compliance and Ethics Group) GRC Capability Model spine; the GRCnext™ primitives themselves are defined in [GRCnext-Copilot](https://github.com/rolldabones/GRCnext-Copilot)
 - [slow-ai-kitchen](https://github.com/rolldabones/slow-ai-kitchen) - the 12-step governed AI methodology the Spellbook operationalizes
 - [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool) - the pre-deployment gate that generates inputs for the risk and inventory artifacts
-- [master-prompt-for-in-house-legal-and-compliance](https://github.com/rolldabones/master-prompt-for-in-house-legal-and-compliance) - the general-purpose in-house workbench alongside this specialized one
+- [master-prompt-for-in-house-legal-and-compliance](https://github.com/rolldabones/master-prompt-for-in-house-legal-and-compliance) - the master prompt: a system prompt that turns a general-purpose assistant into a disciplined in-house legal and compliance assistant for counsel, compliance, legal operations and the business stakeholders they serve
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

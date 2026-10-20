@@ -1,6 +1,6 @@
 # AI GRC Copilot: example run
 
-Illustrative run, not a logged test run under ruling 9. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
+Illustrative run, not a logged test run under the README's Change control rule. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
 
 Kestrel Haulage Group is a fictional company. The run drafts #6 AI Risk Register. It is one exchange: the user's input, then the instrument's output.
 

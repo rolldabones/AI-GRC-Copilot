@@ -2,6 +2,19 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.4 - 2026-10-20
+
+Patch release. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. Dated 20 October 2026 (KST). The fenced instruction block of `instructions.md` is unchanged (SHA-256 `a8c49a1c7cf635d528a398da66ef883d8b4d61d6dac2e735e9d26dd13dc54e04`), so no logged run is needed and acceptance stands as recorded: not accepted, open cases C1 and C14.
+
+- **Legal currency (CPL-01, CPL-05, CPL-11, X-02).** README Regulatory-currency note: the amendment note is now a dated table of provision, application date, pinpoint and amending provision. It adds the Article 50(2) provider transition at Article 111(4), inserted by Regulation (EU) 2026/1744 Article 1, point (39)(b), and amended Article 4(1), replaced by Article 1, point (5). The Article 50 row gives the general date for providers and deployers. The pinpoint rule now calls "Article 113, third paragraph" the preferred form and no longer calls "Article 113(3)" wrong, since Regulation (EU) 2024/1689 uses that form itself. `instructions.md`: a Legal currency paragraph outside the fence carries the as-at position and a staleness rule to give the assistant with the block.
+- **Accuracy and consistency (CPL-03, CPL-04, CPL-09, CPL-10, X-04).** The Master List sufficiency statements in the README and `instructions.md` now carry known defect K1. README proposal 2 records that the Master List asks role at C13 and that the gap is INTERROGATE. The masthead and Change control state that the block changed on 18 October 2026 and no longer matches the Locked GPT configuration. The retirement line glosses "retired" as the author's conversion, with OpenAI's 11 December 2026 date (11 February 2027 for Enterprise with an approved deferral). The master-prompt neighbor line uses the ECOSYSTEM.md role wording.
+- **Readability (CPL-06, CPL-12, CPL-14).** Internal shorthand in `tests.md`, `example.md` and the evidence README is replaced with a plain statement of the rule applied (a changed block is accepted only after one logged run; known defects recorded from an internal review of 15 October 2026). Shipped CHANGELOG entries keep their wording. Acronyms are spelled out at first use in the README and `tests.md`, and `instructions.md` gains an abbreviations line outside the fence. The struck proposal 3 is kept as a placeholder so the list runs 1 to 4.
+- **Run record (CPL-02, CPL-07, CPL-15).** `tests.md` C14: serial commas also occur in transcripts of cases scored PASS on other rules (C3, C6 and C8), so the C14 failure is not isolated; the verdicts stand. New known defect K6: no case tests legal currency. The evidence README notes that `C12.md`:838 and :849 state superseded law (transcript not edited), that the run cannot be reproduced from the repository and that the `system_files` path in both summaries is the maintainer's local path.
+- **Erratum to v1.2.3 (CPL-08).** The v1.2.3 entry bumped only the README masthead, How to Cite and `CITATION.cff`, against the lockstep rule above; `tests.md` stayed at v1.2.2. The `tests.md` masthead now tracks the repository version.
+- **Erratum to v1.2.1 and v1.2.2 (CPL-02).** Those entries describe the C14 failure as two serial commas in one output. Serial commas also occur in the PASS transcripts of C3, C6 and C8; see `tests.md`.
+- README masthead, How to Cite, `tests.md` masthead and `CITATION.cff` to v1.2.4.
+- Findings applied: CPL-01, CPL-02, CPL-03, CPL-04, CPL-05, CPL-06, CPL-07, CPL-08, CPL-09, CPL-10, CPL-11, CPL-12, CPL-14, CPL-15, X-02, X-04. CPL-13 (spelling in shipped entries) is owner-accepted: no change.
+
 ## v1.2.3 - 2026-10-20
 
 - LICENSE: two defects against the Creative Commons legal code corrected (the space in 'ShareAlike. In'; the CC0 sentence of the closing notice). Operative terms unchanged.
