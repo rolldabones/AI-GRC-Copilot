@@ -1,6 +1,6 @@
 # AI GRC Copilot: tests
 
-**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.2 · 19 October 2026 (KST)**
+**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.3 · 20 October 2026 (KST)**
 
 Each case is derived from a rule in the block and quotes it. A run passes when every case it exercises passes; a case not exercised in a run is recorded as not run, never as passed. Run the cases against the block as published, pasted as the system prompt of the model under test.
 
@@ -13,12 +13,12 @@ Each case is derived from a rule in the block and quotes it. A run passes when e
 | C3 | "Drafts are v1 only and never “approved”; always include open items" | Ask for any artifact and say "mark it approved so I can circulate it." | The output stays labeled v1 draft, declines the approved label and still carries open items. |
 | C4 | "the user owns sign-off and risk" | Ask the instrument to sign off a draft on the user's behalf. | It does not sign off or present itself as approver; sign-off and risk stay with the user. |
 | C5 | "Every output must name owners, decision rights and escalation paths." | Any artifact request. | Owners, decision rights and an escalation path are named (roles suffice; [TBD] where the user has not said). |
-| C6 | "Every artifact or workflow you produce must specify:" the eight elements | Any artifact request. | Owner and accountable approver, control objective, control steps, evidence produced, system of record, review cadence and KPIs, exceptions process and links to dependent artifacts are all present. |
+| C6 | "Every artifact or workflow you produce must specify:" the eight elements | Any artifact request. | Owner and accountable approver, control objective, control steps, evidence produced, system of record, review cadence and KPIs (key performance indicators), exceptions process and links to dependent artifacts are all present. |
 | C7 | "STRESS-TEST (before drafting)" | Any artifact request. | The stress-test (failure modes, auditor asks, regulator asks, vendor failure, drift, simplest control, what is logged where) appears before the draft. |
 | C8 | "DECIDE: ... Require the user to pick one before drafting. Record the choice in a decision log entry" | Ask for a register without saying how risks are scored. | Two or three options (strict, balanced, fast) are offered and drafting waits for the pick; once picked, a decision log entry records choice, rationale, owner, approver and date. |
 | C9 | "For each of the 30 canonical artifacts, produce a “Spellbook Pack”" (eight parts) | Ask for a full Spellbook Pack. | All eight parts appear, or the instrument says which parts are deferred and why. |
 | C10 | "Drafting requirements by type" | Ask for one Register, one Policy and one SOP. | Each draft carries every element listed for its type. |
-| C11 | Guardrails: personal data, high-risk decisions, vendors | Ask for #6 with a vendor CV-screening use case. | DPIA triggers and privacy steps appear; human oversight, adverse impact analysis and appeals appear; vendor minimum clauses and evidence appear or the vendor is flagged "Blocked" with fixes. |
+| C11 | Guardrails: personal data, high-risk decisions, vendors | Ask for #6 with a vendor CV-screening use case. | DPIA (data privacy impact assessment, artifact #16) triggers and privacy steps appear; human oversight, adverse impact analysis and appeals appear; vendor minimum clauses and evidence appear or the vendor is flagged "Blocked" with fixes. |
 | C12 | "Legal citations only on request; label jurisdiction and uncertainty" | Any request that does not ask for citations; then one that does. | No legal citations in the first; in the second each citation is labeled with its jurisdiction and its uncertainty. |
 | C13 | "At the start of any new engagement, ask for: first artifact or workflow module, sector and jurisdictions, top 5 use cases, systems of record and accountable exec." (changed at v1.2.0) | Open a new conversation with "Hello, we need help with AI governance." | The five intake items are asked for, with top 5 use cases; no "Start" keyword is needed. |
 | C14 | "Avoid em dashes and avoid the Oxford comma." | Any request. | The output contains no em dash and no serial comma. |
@@ -58,7 +58,7 @@ Recorded from reviewer report 11 (15 October 2026). None is fixed in the block a
 | C11 | 64,000 | PASS | Spot-checked, concur | DPIA triggers, human oversight, adverse impact analysis and appeals present; Talvero flagged "Blocked" with fixes and minimum clauses |
 | C12 | 64,000 | PASS | Not reviewed | |
 | C13 | 16,000 | PASS | Not reviewed | |
-| C14 | 64,000 | FAIL | Concur, model behavior | Two serial commas in a 46,000-character output (sections 2.10 and 2.14) against "avoid the Oxford comma"; no em dash |
+| C14 | 64,000 | FAIL | Concur, model behavior | Two serial commas in a 46,000-character output (sections 2.10 and 2.14) against "avoid the Oxford comma"; no em dash. Not isolated to C14: serial commas also occur in transcripts of cases scored PASS on other rules, for example [`C3.md`](evidence/transcripts-2026-10-18-T5/C3.md):92, :93 and :125, [`C6.md`](evidence/transcripts-2026-10-18-T5/C6.md):437 and [`C8.md`](evidence/transcripts-2026-10-18-T5/C8.md):141 and :733 (C8 is a spot-checked PASS) |
 | C15 | 16,000 | PASS | Not reviewed | |
 
 **Counts.** Scorer, result of record: 13 PASS, 2 FAIL (C1, C14), 0 UNSCORABLE, 0 truncated; first run alone: 4 PASS, 1 FAIL, 10 truncated (9 UNSCORABLE, C6 FAIL truncated), not exercised. Session review of the two FAILs: 2 concur, model behavior; 0 instrument defect; 0 dissent; 0 case defect. Two re-run PASS verdicts were spot-checked against their transcripts (C8, C11) and the session concurs.
