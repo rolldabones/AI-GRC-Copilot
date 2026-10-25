@@ -1,8 +1,8 @@
 # AI GRC Copilot: tests
 
-**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.4 · 20 October 2026 (KST)**
+**Cases, known defects and the run record for [`instructions.md`](instructions.md) · v1.2.5 · 26 October 2026 (KST)**
 
-Each case is derived from a rule in the block and quotes it. A run passes when every case it exercises passes; a case not exercised in a run is recorded as not run, never as passed. Run the cases against the block as published, pasted as the system prompt of the model under test.
+Each case is derived from a rule in the block and quotes it. Acceptance is read under the account rule, `ACCEPTANCE.md` in the `rolldabones` repository, from 26 October 2026; a case not exercised in a run is recorded as not run, never as passed. Run the cases against the block as published, pasted as the system prompt of the model under test.
 
 ## Cases
 
@@ -65,6 +65,8 @@ Recorded from an internal review of the repository dated 15 October 2026. None i
 **Counts.** Scorer, result of record: 13 PASS, 2 FAIL (C1, C14), 0 UNSCORABLE, 0 truncated; first run alone: 4 PASS, 1 FAIL, 10 truncated (9 UNSCORABLE, C6 FAIL truncated), not exercised. Session review of the two FAILs: 2 concur, model behavior; 0 instrument defect; 0 dissent; 0 case defect. Two re-run PASS verdicts were spot-checked against their transcripts (C8, C11) and the session concurs.
 
 **Acceptance.** Under this file's rule ("A run passes when every case it exercises passes") the run does not pass: not accepted, open cases C1 and C14. The case on the "Start" trigger changed at v1.2.0 passes (C13); the block as a whole, with its two v1.2.0 changes, is not accepted under the README's Change control rule until a run passes every case. Reviewer: Michael Paik, 19 October 2026 (KST), concurs. The instruction text is not changed in this release.
+
+**Status under `ACCEPTANCE.md` in the `rolldabones` repository, 26 October 2026 (KST).** Not accepted. Run T5 (18 October 2026) passed 13 of 15 cases; critical case C1 (no invented facts) failed, and C14 (house style) is a residual defect. **Critical cases:** C1, C2, C3, C4 and C11. The acceptance sentences above were written under this file's earlier rule and are kept as the record of that review. The reviewer's concurrence with the run as recorded is read as concurrence per case (ACCEPTANCE.md (e)); each failed case keeps the disposition its session review gives it (model behavior: accepted model behavior; instrument defect: fix in the next block; case defect: case defect).
 
 **Observed, not a case.** A full eight-part Pack (C9) completed only at 64,000 output tokens; at 16,000 ten of fifteen cases were truncated. This is the effect K5 predicts while README proposal 1 (output staging) is not applied.
 

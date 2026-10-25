@@ -1,6 +1,8 @@
 # AI GRC Copilot
 
-**Version 1.2.4 · 20 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion; the block changed on 18 October 2026 and no longer matches the Locked GPT configuration · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.5 · 26 October 2026 · Instrument, formerly the AI GRC Spellbook Copilot custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 15 July 2026, before the conversion; the block changed on 18 October 2026 and no longer matches the Locked GPT configuration · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+
+**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted. Run T5 (18 October 2026) passed 13 of 15 cases; critical case C1 (no invented facts) failed, and C14 (house style) is a residual defect. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. "Retired" here is the author's own conversion of the GPT on that date, not OpenAI's retirement: under OpenAI's Custom GPT retirement and migration FAQ (quoted in the [CHANGELOG](CHANGELOG.md) retirement notice of 28 September 2026), custom GPTs become inaccessible on 11 December 2026, or 11 February 2027 for Enterprise workspaces with an approved deferral. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -125,7 +127,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
+> Paik, Son-U Michael. *AI GRC Copilot*, v1.2.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Copilot
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
