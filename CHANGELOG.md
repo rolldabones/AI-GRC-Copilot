@@ -2,6 +2,11 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.6 - 2026-11-03
+
+- README masthead to 39 words from 54: "the block changed on 18 October 2026 and no longer matches the Locked GPT configuration" leaves the masthead; the README's section on the Locked configuration states it.
+- README, `tests.md` and `CITATION.cff` to v1.2.6; no block, case or run record changed; acceptance unchanged. Train C of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.
+
 ## v1.2.5 - 2026-10-26
 
 Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (not accepted: critical case C1 failed); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
