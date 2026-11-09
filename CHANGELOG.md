@@ -2,6 +2,13 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.7 - 2026-11-09
+
+Patch release. Train D of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.
+
+- README, License: one line points to `rolldabones/LICENSING.md` (v1.0.0, new), which states once what the account's two licenses permit, that a Client's use in its own operations may fall outside NonCommercial, how to ask and why the two licenses do not mix.
+- README, `tests.md` and `CITATION.cff` to v1.2.7; no other file changed.
+
 ## v1.2.6 - 2026-11-03
 
 - README masthead to 39 words from 54: "the block changed on 18 October 2026 and no longer matches the Locked GPT configuration" leaves the masthead; the README's section on the Locked configuration states it.
